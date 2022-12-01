@@ -1,0 +1,23 @@
+
+html {
+  background-image: linear-gradient(rgb(58, 58, 175),rgb(196, 45, 196));
+  background-attachment: fixed;
+}
+
+h3{
+  color: rgb(235, 20, 20);
+}
+
+body{
+  text-align: center;
+}
+
+div{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+label {
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  }
