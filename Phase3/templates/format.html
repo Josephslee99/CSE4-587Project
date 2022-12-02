@@ -13,8 +13,9 @@
     a K-Means clustering model, and finally a random forest model. These models are already trained using data from Texas over the past several years. 
 
   </p>
+  <p2>
     Currently all inputs ACCEPT only one number!
-  <p>
+  <p2>
 
 
   </p>
@@ -45,6 +46,13 @@
     </div>
     <input type = "submit" value="Submit Data" name="submitButton"/>
     </form>
+
+    <script>
+      var pressedButton = document.getElementsByTagName("submit")[0];
+      pressedButton.addEventListener("click", function (event) {
+         alert("Please wait for a few seconds!")
+      })
+   </script>
 
 
 </body>
