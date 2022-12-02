@@ -7,54 +7,52 @@
 
 <body>
 
-  <h1>Total Job Valuation Predictor</h1>
+  <h1>Total Job Valuation Predictor in Texas</h1>
 
 
   <h2>
     This user interface accepts integers and decimal values for the following features that represents
-    the specific job attributes. From these job attributes, 3 models are displayed: a simple linear regression,
-    a K-Means clustering model, and finally a random forest model. These models are already trained using data from
-    Texas over the past several years.
+    the specific job attributes. From these job attributes, 2 models are displayed: a simple linear regression and a random forest model. 
+    These models are already trained using data from Texas over the past several years.
   </h2>
 
   <p>
     Currently all inputs ACCEPT only one number!
   </p>
 
+  <script>
+    function testingButton(){
+      alert(
+        "Please be patient and press ok!"
+      );
+    }
+  </script>
+
   <form method="post" action="/prediction/">
     <div>
-      <label> Total SQFT </label>
+      <label> Total Newly Added SQFT </label>
       <input type="number" name="TotalSqft" />
     </div>
     <div>
-      <label> Variable 1 </label>
+      <label> Remodel Repair SQFT </label>
       <input type="number" name="Variable1" />
     </div>
     <div>
-      <label> Variable 2 </label>
+      <label> Total Valuation Remodel </label>
       <input type="number" name="Variable2" />
     </div>
     <div>
-      <label> Variable 3 </label>
+      <label> Number Of Floors </label>
       <input type="number" name="Variable3" />
     </div>
     <div>
-      <label> Variable 4 </label>
+      <label> Total Lot SQFT </label>
       <input type="number" name="Variable4" />
     </div>
-    <div>
-      <label> Variable 5 </label>
-      <input type="number" name="Variable5" />
-    </div>
-    <input type="submit" value="Submit Data" name="submitButton" />
+    <input type="submit" value="Submit Data" name="submitButton" onclick="testingButton()" />
   </form>
 
-  <script>
-    var pressedButton = document.getElementsByTagName("post")[0];
-    pressedButton.addEventListener("click", function (event) {
-      alert("Please wait for a few seconds!")
-    })
-  </script>
+
 
 
 </body>

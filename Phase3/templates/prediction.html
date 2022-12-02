@@ -7,13 +7,13 @@
 <body>
 
   <h1>
-    Linear Regression Model: Solely on Total Added New SQFT
+    Linear Regression Model: Solely on Total Newly Added SQFT
   </h1>
 
   <img src="{{ url_for('static', filename='lin_regr_summary.png') }}" class="center" alt="Linear Regression Model Summary" height="500" weight = "500" />
 
   <p>
-    Job Value: {{ jobValue_LR }}
+    Predicted Job Value (With a 60% Accurancy): {{ jobValue_LR }}
   </p>
 
   <h2>
@@ -21,7 +21,7 @@
   </h2>
 
   <p>
-    Job Value: {{ jobValue_RF }}
+    Predicted Job Value (With a 57% Accurancy): {{ jobValue_RF }} 
   </p>
 
   <form method="post" action="/" name="BackButton">
