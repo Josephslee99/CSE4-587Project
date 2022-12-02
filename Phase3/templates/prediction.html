@@ -5,9 +5,13 @@
 </head>
 
 <body>
+
   <h1>
     Linear Regression Model: Solely on Total Added New SQFT
   </h1>
+
+  <img src="{{ url_for('static', filename='lin_regr_summary.png') }}" class="center" alt="Linear Regression Model Summary" height="500" weight = "500" />
+
   <p>
     Job Value: {{ jobValue_LR }}
   </p>
@@ -15,21 +19,16 @@
   <h2>
     Random Forest Model: All Variables
   </h2>
+
   <p2>
     Job Value: {{ jobValue_RF }}
   </p2>
 
   <form method="post" action="/" name="BackButton">
-     <input type = "submit" value="Back Page" name="BackButton"/>
-    </form>
+    <input type = "submit" value="Back Page" name="BackButton"/>
+  </form>
 
   </body>
-
-  <h3>
-    Linear Regression Model Summary
-  </h3>
-  <img src="images/lin_regr_summary.png" alt="Summary" />
-
 
 
 </html>
