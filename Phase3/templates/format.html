@@ -5,8 +5,19 @@
 </head>
 <body>
 
+  <h2>Total Job Valuation Predictor</h2>
 
-  <h3>Total Job Valuation Predictor</h3>
+  <p>
+    This user interface accepts integers and decimal values for the following features that represents
+    the specific job attributes. From these job attributes, 3 models are displayed: a simple linear regression,
+    a K-Means clustering model, and finally a random forest model. These models are already trained using data from Texas over the past several years. 
+
+  </p>
+    Currently all inputs ACCEPT only one number!
+  <p>
+
+
+  </p>
     <form method="post" action="/prediction/">
     <div>
       <label> Total SQFT </label>
@@ -32,7 +43,7 @@
       <label> Variable 5  </label>
       <input type= "number" name="Variable5"/>
     </div>
-    <input type = "submit" value="Linear Regr." name="submitButton"/>
+    <input type = "submit" value="Submit Data" name="submitButton"/>
     </form>
 
 

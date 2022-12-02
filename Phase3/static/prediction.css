@@ -1,0 +1,30 @@
+html{
+    background-image: linear-gradient(rgb(58, 58, 175),rgb(196, 45, 196));
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+p2{
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+form{
+    text-align: center;
+}
