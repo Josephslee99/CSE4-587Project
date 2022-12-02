@@ -4,22 +4,21 @@ html {
   background-attachment: fixed;
 }
 
-h2 {
-  color: white;
-  font-size: xx-large;
-}
-
 body {
   text-align: center;
 }
 
-p2 {
-  color: white;
+h1,h2,p {color: white;}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: xx-large;
 }
 
-p {
-  color: white;
+h2,p,label {
+  font-family: Verdana, Geneva, sans-serif;
 }
+
 
 div {
   margin-top: 50px;

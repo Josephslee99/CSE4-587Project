@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href='/static/format.css' />
+  <link rel="stylesheet" href='/static/format.css' />
 </head>
+
 <body>
 
-  <h2>Total Job Valuation Predictor</h2>
+  <h1>Total Job Valuation Predictor</h1>
 
+
+  <h2>
+    This user interface accepts integers and decimal values for the following features that represents
+    the specific job attributes. From these job attributes, 3 models are displayed: a simple linear regression,
+    a K-Means clustering model, and finally a random forest model. These models are already trained using data from
+    Texas over the past several years.
+  </h2>
 
   <p>
-      This user interface accepts integers and decimal values for the following features that represents
-      the specific job attributes. From these job attributes, 3 models are displayed: a simple linear regression,
-      a K-Means clustering model, and finally a random forest model. These models are already trained using data from Texas over the past several years. 
-    </p>
-
-    <p2>
     Currently all inputs ACCEPT only one number!
-  <p2>
+  </p>
 
-    <form method="post" action="/prediction/">
+  <form method="post" action="/prediction/">
     <div>
       <label> Total SQFT </label>
-      <input type= "number" name="TotalSqft"/>
+      <input type="number" name="TotalSqft" />
     </div>
     <div>
       <label> Variable 1 </label>
-      <input type= "number" name="Variable1"/>
+      <input type="number" name="Variable1" />
     </div>
     <div>
       <label> Variable 2 </label>
-      <input type= "number" name="Variable2"/>
+      <input type="number" name="Variable2" />
     </div>
     <div>
       <label> Variable 3 </label>
-      <input type= "number" name="Variable3"/>
+      <input type="number" name="Variable3" />
     </div>
     <div>
       <label> Variable 4 </label>
-      <input type= "number" name="Variable4"/>
+      <input type="number" name="Variable4" />
     </div>
     <div>
-      <label> Variable 5  </label>
-      <input type= "number" name="Variable5"/>
+      <label> Variable 5 </label>
+      <input type="number" name="Variable5" />
     </div>
-    <input type = "submit" value="Submit Data" name="submitButton"/>
-    </form>
+    <input type="submit" value="Submit Data" name="submitButton" />
+  </form>
 
-    <script>
-      var pressedButton = document.getElementsByTagName("post")[0];
-      pressedButton.addEventListener("click", function (event) {
-         alert("Please wait for a few seconds!")
-      })
-   </script>
+  <script>
+    var pressedButton = document.getElementsByTagName("post")[0];
+    pressedButton.addEventListener("click", function (event) {
+      alert("Please wait for a few seconds!")
+    })
+  </script>
 
 
 </body>
+
 </html>
