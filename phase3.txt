@@ -1,0 +1,11 @@
+Demo: Points to Cover
+-----------------------
+- What was the original problem statement
+- What the tool is used for
+- What kind of data should be uploaded (Construction Permits)
+- What will be calculated? How?
+- Why did we end up using 2 models with 2 separate feedbacks?
+- What are the visuals indicating?
+- What about other models?
+- How will this info be used? What kind of questions could be solved from this?
+- 
